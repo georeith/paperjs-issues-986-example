@@ -2,13 +2,15 @@
   "name": "paperjs-issues-986-example",
   "main": "dist/index.js",
   "devDependencies": {
-      "webpack": "^1.12.11",
-      "webpack-dev-server": "^1.14.1"
+    "browserify": "^13.0.0",
+    "webpack": "^1.12.11",
+    "webpack-dev-server": "^1.14.1"
   },
   "scripts": {
-      "build": "rm -r -f dist && webpack -d"
+    "build:webpack": "rm -rf dist && webpack -d",
+    "build:browserify": "rm -rf dist && mkdir -p dist && node browserify.js > dist/test.js"
   },
   "dependencies": {
-      "paper": "https://github.com/paperjs/paper.js.git#c33ec30f82bb3ab307ef8c8636083aa1a110e45d"
+    "paper": "https://github.com/paperjs/paper.js.git#c33ec30f82bb3ab307ef8c8636083aa1a110e45d"
   }
 }
