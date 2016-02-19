@@ -1,0 +1,14 @@
+{
+  "name": "paperjs-issues-986-example",
+  "main": "dist/index.js",
+  "devDependencies": {
+      "webpack": "^1.12.11",
+      "webpack-dev-server": "^1.14.1"
+  },
+  "scripts": {
+      "build": "rm -r -f dist && webpack -d"
+  },
+  "dependencies": {
+      "paper": "https://github.com/paperjs/paper.js.git#c33ec30f82bb3ab307ef8c8636083aa1a110e45d"
+  }
+}
